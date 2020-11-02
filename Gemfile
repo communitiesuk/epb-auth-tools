@@ -9,7 +9,7 @@ source 'https://rubygems.org' do
     gem 'prettier', '~> 0.20.0'
     gem 'rack-test', '~> 1.1'
     gem 'rake', '~> 13.0'
-    gem 'rspec', '~> 3.0'
+    gem 'rspec', '~> 3.10'
     gem 'sinatra', '~> 2.0'
     gem 'uuid', '~> 2.3'
     gem 'webmock', '~> 3.8'
