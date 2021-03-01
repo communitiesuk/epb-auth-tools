@@ -4,6 +4,8 @@ This RubyGem provides a set of tools to use along with [communitiesuk/epb-auth-s
 There are two primary components: middleware for validating JWTs in sinatra apps,
 and a HTTP client that provides a mechanism for making authenticated requests.
 
+Random edit
+
 ## Getting set up
 
 ### Install
