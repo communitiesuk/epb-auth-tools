@@ -12,7 +12,7 @@ source 'https://rubygems.org' do
     gem 'rspec', '~> 3.10'
     gem 'sinatra', '~> 2.0'
     gem 'uuid', '~> 2.3'
-    gem 'webmock', '~> 3.9'
+    gem 'webmock', '~> 3.12'
     gem 'zeitwerk', '~> 2.4'
   end
 

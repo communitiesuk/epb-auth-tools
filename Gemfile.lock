@@ -3,7 +3,8 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    crack (0.4.4)
+    crack (0.4.5)
+      rexml
     diff-lcs (1.4.4)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
@@ -30,6 +31,7 @@ GEM
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (13.0.3)
+    rexml (3.2.4)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
@@ -53,7 +55,7 @@ GEM
     tilt (2.0.10)
     uuid (2.3.9)
       macaddr (~> 1.0)
-    webmock (3.9.3)
+    webmock (3.12.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -71,7 +73,7 @@ DEPENDENCIES
   rspec (~> 3.10)!
   sinatra (~> 2.0)!
   uuid (~> 2.3)!
-  webmock (~> 3.9)!
+  webmock (~> 3.12)!
   zeitwerk (~> 2.4)!
 
 RUBY VERSION
