@@ -1,4 +1,7 @@
 GEM
+  specs:
+
+GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.7.0)
@@ -34,7 +37,7 @@ GEM
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (13.0.3)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
@@ -58,7 +61,7 @@ GEM
     tilt (2.0.10)
     uuid (2.3.9)
       macaddr (~> 1.0)
-    webmock (3.12.1)
+    webmock (3.13.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -76,7 +79,7 @@ DEPENDENCIES
   rspec (~> 3.10)!
   sinatra (~> 2.0)!
   uuid (~> 2.3)!
-  webmock (~> 3.12)!
+  webmock (~> 3.13)!
   zeitwerk (~> 2.4)!
 
 RUBY VERSION
