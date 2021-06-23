@@ -73,12 +73,22 @@ describe Auth::HttpClient do
                            OAuth2Stub::Client
     end
 
-    it 'calling get results in a token refresh request' do
+    it 'calling get results in a token refresh request when body available as string' do
       client.refresh
 
       allow(client).to receive :refresh
 
       expect(client.get('/get/expired')).to be_instance_of OAuth2::Response
+
+      expect(client).to have_received :refresh
+    end
+
+    it 'calling get results in a token refresh request when body available as hash of decoded JSON' do
+      client.refresh
+
+      allow(client).to receive :refresh
+
+      expect(client.get('/get/expired-decoded-json')).to be_instance_of OAuth2::Response
 
       expect(client).to have_received :refresh
     end
