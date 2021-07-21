@@ -36,7 +36,9 @@ module OAuth2Stub
     private
 
     def get_response(url)
-      return expired_decoded_json_response if url.include? 'expired-decoded-json'
+      if url.include? 'expired-decoded-json'
+        return expired_decoded_json_response
+      end
       return expired_response if url.include? 'expired'
       return html_response if url.include? 'html'
       return no_network if url.include? 'network_error'
@@ -59,7 +61,8 @@ module OAuth2Stub
       OAuth2::Response.new Faraday::Response.new status: 401,
                                                  reason_phrase: 'Unauthorized',
                                                  response_headers: {},
-                                                 body: '{"error": "Auth::Errors::TokenExpired"}'
+                                                 body:
+                                                   '{"error": "Auth::Errors::TokenExpired"}'
     end
 
     def expired_decoded_json_response

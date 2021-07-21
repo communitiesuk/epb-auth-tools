@@ -88,7 +88,9 @@ describe Auth::HttpClient do
 
       allow(client).to receive :refresh
 
-      expect(client.get('/get/expired-decoded-json')).to be_instance_of OAuth2::Response
+      expect(
+        client.get('/get/expired-decoded-json')
+      ).to be_instance_of OAuth2::Response
 
       expect(client).to have_received :refresh
     end
