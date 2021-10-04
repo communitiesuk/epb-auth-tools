@@ -16,6 +16,6 @@ source 'https://rubygems.org' do
     gem 'zeitwerk', '~> 2.4'
   end
 
-  gem 'jwt', '~> 2.2'
+  gem 'jwt', '~> 2.3'
   gem 'oauth2', '~> 1.4'
 end
