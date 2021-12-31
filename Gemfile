@@ -6,10 +6,10 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 source 'https://rubygems.org' do
   group :development do
-    gem 'prettier', '~> 1.6.1'
     gem 'rack-test', '~> 1.1'
     gem 'rake', '~> 13.0'
     gem 'rspec', '~> 3.10'
+    gem 'rubocop-govuk', require: false
     gem 'sinatra', '~> 2.0'
     gem 'uuid', '~> 2.3'
     gem 'webmock', '~> 3.14'

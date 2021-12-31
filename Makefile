@@ -16,7 +16,7 @@ test: ## Run all tests
 
 .PHONY: format
 format: ## Format ruby files using .editorconfig
-	@bundle exec rbprettier --write `find . -name '*.rb'` *.ru Gemfile
+	@bundle exec rubocop --auto-correct
 
 .PHONY: gem-test
 gem-test: ## Run tests for gem
