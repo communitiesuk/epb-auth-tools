@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'sinatra'
-require 'epb-auth-tools'
+require "sinatra"
+require "epb-auth-tools"
 
 class AppService < Sinatra::Base
   set(:jwt_auth) do
@@ -13,9 +13,9 @@ class AppService < Sinatra::Base
     end
   end
 
-  get '/', jwt_auth: [] do
+  get "/", jwt_auth: [] do
     content_type :json
     status 200
-    { message: 'authenticated' }.to_json
+    { message: "authenticated" }.to_json
   end
 end

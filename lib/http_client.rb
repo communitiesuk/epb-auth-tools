@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'oauth2'
+require "oauth2"
 
 module Auth
   class HttpClient
@@ -21,8 +21,8 @@ module Auth
       @authenticated_client = nil
 
       site_url = URI.parse(auth_server)
-      token_url = site_url.path + '/oauth/token'
-      authorisation_url = site_url.path + '/oauth/token'
+      token_url = "#{site_url.path}/oauth/token"
+      authorisation_url = "#{site_url.path}/oauth/token"
       site_url = "#{site_url.scheme}://#{site_url.host}:#{site_url.port}"
 
       @base_uri = base_uri

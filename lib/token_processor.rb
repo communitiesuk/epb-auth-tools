@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'jwt'
+require "jwt"
 
 module Auth
   class TokenProcessor
@@ -17,19 +17,17 @@ module Auth
 
       payload, _header = jwt_process token
 
-      raise Auth::Errors::TokenExpired unless payload.key?('exp')
-      raise Auth::Errors::TokenHasNoIssuer unless payload.key?('iss')
-      unless payload['iss'] == @jwt_issuer
-        raise Auth::Errors::TokenIssuerIncorrect
-      end
+      raise Auth::Errors::TokenExpired unless payload.key?("exp")
+      raise Auth::Errors::TokenHasNoIssuer unless payload.key?("iss")
+      raise Auth::Errors::TokenIssuerIncorrect unless payload["iss"] == @jwt_issuer
 
       Auth::Token.new payload
     end
 
-    private
+  private
 
     def jwt_process(token)
-      options = { algorithm: 'HS256', iss: @jwt_issuer }
+      options = { algorithm: "HS256", iss: @jwt_issuer }
 
       JWT.decode token, @jwt_secret, true, options
     rescue JWT::ExpiredSignature
