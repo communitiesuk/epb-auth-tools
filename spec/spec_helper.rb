@@ -2,7 +2,7 @@
 
 require "jwt"
 require "uuid"
-require "epb-auth-tools"
+require_relative "../lib/epb_auth_tools"
 require "rack/test"
 require "rspec"
 require "webmock/rspec"

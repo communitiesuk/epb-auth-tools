@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "sinatra"
-require "epb-auth-tools"
+require_relative "../../../lib/epb_auth_tools"
 
 class AppService < Sinatra::Base
   set(:jwt_auth) do
