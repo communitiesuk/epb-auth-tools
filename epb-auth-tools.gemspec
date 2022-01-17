@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
                lib/token.rb
                lib/token_processor.rb
                lib/sinatra/conditional.rb]
-  s.add_runtime_dependency "jwt", ["~> 2.2"]
+  s.add_runtime_dependency "jwt", ["~> 2.3"]
   s.add_runtime_dependency "oauth2", ["~> 1.4"]
   s.require_paths = %w[lib]
 end
