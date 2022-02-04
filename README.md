@@ -23,7 +23,7 @@ To ensure that all your code looks nice and conforms to the repo standards, run
 
 The epb-auth-tools module has a sinatra conditional routing helper class.
 
-To use this simply require `epb_auth_tools` and define the following in your
+To use this simply require `epb-auth-tools` and define the following in your
 application class.
 
 ```ruby
