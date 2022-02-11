@@ -12,8 +12,9 @@ Gem::Specification.new do |s|
     "Lawrence Goldstien <lawrence.goldstien@madetech.com>",
     "Yusuf Sheikh <yusuf@madetech.com>",
     "Jaseera <jaseera@madetech.com>",
-    "Kevin Keenoy <kevin.keenoy@communities.gov.uk>",
-    "Douglas Greenshields <douglas.greenshields@communities.gov.uk>",
+    "Kevin Keenoy <kevin.keenoy@levellingup.gov.uk>",
+    "Douglas Greenshields <douglas.greenshields@levellingup.gov.uk>",
+    "Aga Dufrat <aga.dufrat@levellingup.gov.uk>",
   ]
   s.files = %w[lib/epb-auth-tools.rb
                lib/errors.rb
