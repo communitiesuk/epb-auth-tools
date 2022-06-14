@@ -16,5 +16,5 @@ group :development do
   gem "sinatra", "~> 2.0"
   gem "uuid", "~> 2.3"
   gem "webmock", "~> 3.14"
-  gem "zeitwerk", "~> 2.5"
+  gem "zeitwerk", "~> 2.6"
 end
