@@ -6,7 +6,7 @@ git_source(:github) { |_repo_name| "https://github.com/#{repo_name}" }
 source "https://rubygems.org"
 
 gem "jwt", "~> 2.4"
-gem "oauth2", "~> 1.4"
+gem "oauth2", "~> 2.0"
 
 group :development do
   gem "rack-test", "~> 1.1"
