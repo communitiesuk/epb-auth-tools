@@ -15,6 +15,6 @@ group :development do
   gem "rubocop-govuk", require: false
   gem "sinatra", "~> 2.0"
   gem "uuid", "~> 2.3"
-  gem "webmock", "~> 3.14"
+  gem "webmock", "~> 3.17"
   gem "zeitwerk", "~> 2.6"
 end
