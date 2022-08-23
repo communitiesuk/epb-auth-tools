@@ -29,6 +29,7 @@ module Auth
       @client =
         auth_client.new client_id,
                         client_secret,
+                        auth_scheme: :request_body,
                         site: site_url,
                         token_url: token_url,
                         authorisation_url: authorisation_url,
