@@ -16,7 +16,7 @@ test: ## Run all tests
 
 .PHONY: format
 format: ## Format ruby files using .editorconfig
-	@bundle exec rubocop --auto-correct
+	@bundle exec rubocop --autocorrect
 
 .PHONY: gem-test
 gem-test: ## Run tests for gem

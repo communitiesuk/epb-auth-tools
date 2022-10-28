@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.date = "2022-08-23"
   s.summary = "Tools for authentication and authorisation with JWTs and OAuth"
   s.license = "MIT"
-  s.required_ruby_version = ">= 2.7.0"
+  s.required_ruby_version = ">= 3.1.2"
   s.homepage = "https://github.com/communitiesuk/epb-auth-tools"
   s.authors = [
     "Lawrence Goldstien <lawrence.goldstien@madetech.com>",

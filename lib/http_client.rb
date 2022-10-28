@@ -31,8 +31,8 @@ module Auth
                         client_secret,
                         auth_scheme: :request_body,
                         site: site_url,
-                        token_url: token_url,
-                        authorisation_url: authorisation_url,
+                        token_url:,
+                        authorisation_url:,
                         raise_errors: false
     end
 
