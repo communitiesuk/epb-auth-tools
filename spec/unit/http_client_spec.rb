@@ -143,4 +143,22 @@ describe Auth::HttpClient do
       }.to raise_error instance_of Auth::Errors::NetworkConnectionFailed
     end
   end
+
+  context "when Faraday connection options are passed" do
+    let(:connection_opts) { { timeout: 5 } }
+
+    let(:client) do
+      described_class.new @client_id,
+                          @client_secret,
+                          @auth_server,
+                          "http://localhost:19299",
+                          OAuth2Stub::Client,
+                          faraday_connection_opts: connection_opts
+    end
+
+    it "passes the connection options down as a connection_opts value" do
+      http_client = client.instance_variable_get "@client"
+      expect(http_client.options[:connection_opts]).to eq connection_opts
+    end
+  end
 end

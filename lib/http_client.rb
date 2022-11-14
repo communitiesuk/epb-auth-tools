@@ -11,7 +11,8 @@ module Auth
       client_secret = nil,
       auth_server = nil,
       base_uri = nil,
-      auth_client = OAuth2::Client
+      auth_client = OAuth2::Client,
+      faraday_connection_opts: {}
     )
       raise Auth::Errors::ClientHasNoClientId if client_id.nil?
       raise Auth::Errors::ClientHasNoClientSecret if client_secret.nil?
@@ -33,7 +34,8 @@ module Auth
                         site: site_url,
                         token_url:,
                         authorisation_url:,
-                        raise_errors: false
+                        raise_errors: false,
+                        connection_opts: faraday_connection_opts
     end
 
     def refresh

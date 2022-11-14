@@ -2,7 +2,11 @@
 
 module OAuth2Stub
   class Client
-    def initialize(client_id, client_secret, options); end
+    attr_reader :options
+
+    def initialize(_client_id, _client_secret, options)
+      @options = options
+    end
 
     def client_credentials
       OAuth2Stub::ClientCredentials.new
