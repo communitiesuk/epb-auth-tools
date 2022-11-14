@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name = "epb-auth-tools"
-  s.version = "1.0.11"
-  s.date = "2022-08-23"
+  s.version = "1.1.0"
+  s.date = "2022-11-14"
   s.summary = "Tools for authentication and authorisation with JWTs and OAuth"
   s.license = "MIT"
   s.required_ruby_version = ">= 3.1.2"
