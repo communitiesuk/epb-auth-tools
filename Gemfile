@@ -5,7 +5,7 @@ ruby ">= 2.7", "< 4.0"
 git_source(:github) { |_repo_name| "https://github.com/#{repo_name}" }
 source "https://rubygems.org"
 
-gem "jwt", "~> 2.5"
+gem "jwt", "~> 2.7"
 gem "oauth2", "~> 2.0"
 
 group :development do
