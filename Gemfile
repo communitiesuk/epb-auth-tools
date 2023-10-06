@@ -8,7 +8,7 @@ source "https://rubygems.org"
 gem "jwt", "~> 2.7"
 gem "oauth2", "~> 2.0"
 
-group :development do
+group :test, :development do
   gem "rack-test", "~> 2.0"
   gem "rake", "~> 13.0"
   gem "rspec", "~> 3.11"
