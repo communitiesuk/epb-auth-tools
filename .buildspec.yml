@@ -8,7 +8,6 @@ phases:
     commands:
       - gem install bundler
       - make install
-      - gem uninstall rack --version ">= 3.0"
   build:
     commands:
       - make test
