@@ -12,7 +12,7 @@ install: ## Install required libraries and setup
 
 .PHONY: test
 test: ## Run all tests
-	@rake spec
+	@bundle exec rake spec
 
 .PHONY: format
 format: ## Format ruby files using .editorconfig
