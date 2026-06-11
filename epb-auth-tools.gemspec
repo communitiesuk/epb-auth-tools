@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name = "epb-auth-tools"
-  s.version = "1.1.0"
-  s.date = "2022-11-14"
+  s.version = "1.2.0"
+  s.date = "2026-05-05"
   s.summary = "Tools for authentication and authorisation with JWTs and OAuth"
   s.license = "MIT"
   s.required_ruby_version = ">= 3.1.2"
@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
     "Kevin Keenoy <kevin.keenoy@levellingup.gov.uk>",
     "Douglas Greenshields <douglas.greenshields@levellingup.gov.uk>",
     "Aga Dufrat <aga.dufrat@levellingup.gov.uk>",
+    "Abdal Warsame <abdal.warsame@communities.gov.uk>",
   ]
   s.files = %w[lib/epb-auth-tools.rb
                lib/errors.rb
