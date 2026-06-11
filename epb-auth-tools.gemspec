@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "epb-auth-tools"
-  s.version = "1.2.0"
+  s.version = "1.2.1"
   s.date = "2026-05-05"
   s.summary = "Tools for authentication and authorisation with JWTs and OAuth"
   s.license = "MIT"
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
                lib/token.rb
                lib/token_processor.rb
                lib/sinatra/conditional.rb]
-  s.add_runtime_dependency "jwt", ["~> 2.3"]
+  s.add_runtime_dependency "jwt", ["~> 3.2.0"]
   s.add_runtime_dependency "oauth2", ">= 1.4", "< 3.0"
   s.require_paths = %w[lib]
 end
