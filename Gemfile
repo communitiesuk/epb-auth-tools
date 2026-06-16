@@ -13,7 +13,7 @@ group :development do
   gem "rake", "~> 13.1"
   gem "rspec", "~> 3.11"
   gem "rubocop-govuk", require: false
-  gem "sinatra", "~> 4.0"
+  gem "sinatra", "~> 4.2"
   gem "uuid", "~> 2.3"
   gem "webmock", "~> 3.14"
   gem "zeitwerk", "~> 2.6"
