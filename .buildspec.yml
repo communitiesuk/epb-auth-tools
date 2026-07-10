@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      ruby: 3.1.0
+      ruby: 3.3.4
   pre_build:
     commands:
       - gem install bundler
