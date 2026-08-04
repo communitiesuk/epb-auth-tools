@@ -9,7 +9,7 @@ gem "jwt", "~> 3.2.0"
 gem "oauth2", "~> 2.0"
 
 group :development do
-  gem "rack-test", "~> 2.1"
+  gem "rack-test", "~> 2.2"
   gem "rake", "~> 13.4"
   gem "rspec", "~> 3.11"
   gem "rubocop-govuk", require: false
