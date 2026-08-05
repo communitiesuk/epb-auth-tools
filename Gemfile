@@ -11,7 +11,7 @@ gem "oauth2", "~> 2.0"
 group :development do
   gem "rack-test", "~> 2.2"
   gem "rake", "~> 13.4"
-  gem "rspec", "~> 3.11"
+  gem "rspec", "~> 3.13"
   gem "rubocop-govuk", require: false
   gem "sinatra", "~> 4.0"
   gem "uuid", "~> 2.3"
