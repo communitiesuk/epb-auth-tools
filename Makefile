@@ -14,6 +14,10 @@ install: ## Install required libraries and setup
 test: ## Run all tests
 	@bundle exec rake spec
 
+.PHONY: lint
+lint:
+	@bundle exec rubocop
+
 .PHONY: format
 format: ## Format ruby files using .editorconfig
 	@bundle exec rubocop --autocorrect
