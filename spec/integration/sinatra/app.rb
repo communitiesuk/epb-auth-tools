@@ -4,6 +4,8 @@ require "sinatra"
 require_relative "../../../lib/epb-auth-tools"
 
 class AppService < Sinatra::Base
+  set :host_authorization, { permitted_hosts: %w[] }
+
   set(:jwt_auth) do
     condition do
       Auth::Sinatra::Conditional.process_request env
