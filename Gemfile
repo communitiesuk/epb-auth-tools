@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ruby ">= 2.7", "< 4.0"
+ruby "4.0.7"
 
 git_source(:github) { |_repo_name| "https://github.com/#{repo_name}" }
 source "https://rubygems.org"
@@ -18,3 +18,5 @@ group :development do
   gem "webmock", "~> 3.26"
   gem "zeitwerk", "~> 2.6"
 end
+
+gem "cgi", "~> 0.5.2"
