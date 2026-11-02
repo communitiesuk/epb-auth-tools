@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
-ruby "4.0.7"
+ruby "4.0.9"
 
 git_source(:github) { |_repo_name| "https://github.com/#{repo_name}" }
 source "https://rubygems.org"
 
+gem "cgi", "~> 0.5.2"
 gem "jwt", "~> 3.3.0"
 gem "oauth2", "~> 2.0"
 
@@ -18,5 +19,3 @@ group :development do
   gem "webmock", "~> 3.26"
   gem "zeitwerk", "~> 2.6"
 end
-
-gem "cgi", "~> 0.5.2"
