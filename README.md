@@ -14,6 +14,8 @@ To install all required libs and other info, run `make install`.
 
 To test the gem, run `make test`.
 
+To generate a coverage report run with `COVERAGE=true make test`
+
 ### Syntax Cleanup
 
 To ensure that all your code looks nice and conforms to the repo standards, run

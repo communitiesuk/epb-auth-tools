@@ -14,6 +14,7 @@ group :development do
   gem "rake", "~> 13.4"
   gem "rspec", "~> 3.13"
   gem "rubocop-govuk", require: false
+  gem "simplecov", "~>1.3.2"
   gem "sinatra", "~> 4.2"
   gem "uuid", "~> 2.3"
   gem "webmock", "~> 3.26"

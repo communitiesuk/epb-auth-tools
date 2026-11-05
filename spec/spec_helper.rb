@@ -1,5 +1,13 @@
 # frozen_string_literal: true
 
+if /^true$/i.match?(ENV.fetch("COVERAGE", nil))
+  require "simplecov"
+  SimpleCov.start do
+    enable_coverage :branch
+    cover "lib/**/*.rb"
+  end
+end
+
 require "jwt"
 require "uuid"
 require_relative "../lib/epb-auth-tools"
