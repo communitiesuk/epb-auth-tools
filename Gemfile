@@ -7,7 +7,7 @@ source "https://rubygems.org"
 
 gem "cgi", "~> 0.5.2"
 gem "jwt", "~> 3.3.0"
-gem "oauth2", "~> 2.0"
+gem "oauth2", "~> 2.1"
 
 group :development do
   gem "rack-test", "~> 2.2"
