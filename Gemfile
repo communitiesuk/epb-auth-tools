@@ -2,7 +2,6 @@
 
 ruby "4.0.9"
 
-git_source(:github) { |_repo_name| "https://github.com/#{repo_name}" }
 source "https://rubygems.org"
 
 gem "cgi", "~> 0.5.2"
@@ -10,6 +9,7 @@ gem "jwt", "~> 3.3.0"
 gem "oauth2", "~> 2.1"
 
 group :development do
+  gem "debug"
   gem "rack-test", "~> 2.2"
   gem "rake", "~> 13.4"
   gem "rspec", "~> 3.13"
