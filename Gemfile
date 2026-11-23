@@ -4,19 +4,17 @@ ruby "4.0.10"
 
 source "https://rubygems.org"
 
-gem "cgi", "~> 0.5.2"
-gem "jwt", "~> 3.3.0"
-gem "oauth2", "~> 2.1"
+gemspec
 
 group :development do
   gem "debug"
-  gem "rack-test", "~> 2.2"
-  gem "rake", "~> 13.4"
-  gem "rspec", "~> 3.13"
+  gem "rack-test"
+  gem "rake"
+  gem "rspec"
   gem "rubocop-govuk", require: false
-  gem "simplecov", "~>1.3.2"
-  gem "sinatra", "~> 4.2"
-  gem "uuid", "~> 2.3"
-  gem "webmock", "~> 3.35"
-  gem "zeitwerk", "~> 2.8"
+  gem "simplecov"
+  gem "sinatra"
+  gem "uuid"
+  gem "webmock"
+  gem "zeitwerk"
 end
