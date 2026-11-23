@@ -17,6 +17,6 @@ group :development do
   gem "simplecov", "~>1.3.2"
   gem "sinatra", "~> 4.2"
   gem "uuid", "~> 2.3"
-  gem "webmock", "~> 3.26"
+  gem "webmock", "~> 3.35"
   gem "zeitwerk", "~> 2.8"
 end
