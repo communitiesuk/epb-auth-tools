@@ -12,7 +12,7 @@ install: ## Install required libraries and setup
 
 .PHONY: test
 test: ## Run all tests
-	@bundle exec rake spec
+	@bundle exec rspec
 
 .PHONY: lint
 lint:
